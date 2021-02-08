@@ -1,7 +1,7 @@
-package com.jetbrains.handson.httpapi
+package com.lucky
 
-import com.jetbrains.handson.httpapi.routes.registerCustomerRoutes
-import com.jetbrains.handson.httpapi.routes.registerOrderRoutes
+import com.lucky.routes.registerCustomerRoutes
+import com.lucky.routes.registerOrderRoutes
 import io.ktor.application.*
 import io.ktor.features.*
 import io.ktor.serialization.*

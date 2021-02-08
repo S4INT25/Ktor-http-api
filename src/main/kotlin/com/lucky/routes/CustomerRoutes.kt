@@ -1,7 +1,7 @@
-package com.jetbrains.handson.httpapi.routes
+package com.lucky.routes
 
-import com.jetbrains.handson.httpapi.database.MyDatabase
-import com.jetbrains.handson.httpapi.models.Customer
+import com.lucky.database.MyDatabase
+import com.lucky.models.Customer
 import io.ktor.application.*
 import io.ktor.http.*
 import io.ktor.request.*
@@ -39,7 +39,7 @@ fun Route.customerRouting() {
             val id = call.parameters["id"] ?: return@delete call.respond(HttpStatusCode.BadRequest)
             if (MyDatabase.deleteCustomerById(id)) {
                 call.respondText(
-                    "com.jetbrains.handson.httpapi.models.Customer removed correctly",
+                    "com.lucky.models.Customer removed correctly",
                     status = HttpStatusCode.Accepted
                 )
             } else {

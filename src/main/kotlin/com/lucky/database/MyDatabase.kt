@@ -1,6 +1,6 @@
-package com.jetbrains.handson.httpapi.database
+package com.lucky.database
 
-import com.jetbrains.handson.httpapi.models.Customer
+import com.lucky.models.Customer
 import com.mongodb.DuplicateKeyException
 import com.mongodb.MongoException
 import org.litote.kmongo.coroutine.coroutine
